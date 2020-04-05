@@ -1,4 +1,4 @@
-# Time Attend Application - Employee
+# Time Attend Application - Manager
 
 ## Installation
 1. `yarn install`
