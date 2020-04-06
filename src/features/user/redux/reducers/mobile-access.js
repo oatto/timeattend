@@ -27,8 +27,8 @@ const deviceModel = DeviceInfo.getModel().replace(/\s/g, "");
 DeviceInfo.getModel();
 const devicePlatform = DeviceInfo.getSystemName().replace(/\s/g, "");
 DeviceInfo.getModel();
-const uniqueId = DeviceInfo.getUniqueID().replace(/\s/g, "");
-DeviceInfo.getUniqueID();
+const uniqueId = DeviceInfo.getUniqueId().replace(/\s/g, "");
+DeviceInfo.getUniqueId();
 
 export const watchMobileAccessNotificationReceived = function*() {
     while (true) {
