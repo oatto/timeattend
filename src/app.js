@@ -16,6 +16,8 @@ import { DEFAULT_LOCALE } from './common/constants';
 import RootNavigation from './common/rootNavigation';
 import getTheme from '../native-base-theme/components';
 
+import { SafeAreaProvider } from 'react-native-safe-area-context';
+
 NativeTachyons.build(configStyle, StyleSheet);
 
 export const store = configureStore({
@@ -53,7 +55,9 @@ class App extends React.Component {
                     <LoadingOverlay />
                     <DirectMessage />
                     <StyleProvider style={getTheme(ThemeVariables)}>
-                        <RootNavigation />
+                        <SafeAreaProvider>
+                            <RootNavigation />
+                        </SafeAreaProvider>
                     </StyleProvider>
                 </View>
             </Provider>
