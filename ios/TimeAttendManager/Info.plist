@@ -17,7 +17,7 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -37,20 +37,32 @@
 			</dict>
 		</dict>
 	</dict>
-	<key>NSCameraUsageDescription</key>
-	<string>Application required a permission to use a camera for taking a photo of documents that in need.</string>
-	<key>NSLocationAlwaysUsageDescription</key>
-	<string>$(PRODUCT_NAME) location use.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Application need a permission to access your microphone for media record.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Application need a permission to save image to your gallery.</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Application need a permission to access your photo library.</string>
+	<key>NSAppleMusicUsageDescription</key>
+    <string>$(PRODUCT_NAME) use apple music.</string>
+    <key>NSBluetoothAlwaysUsageDescription</key>
+    <string>$(PRODUCT_NAME) always use bluetooth.</string>
+    <key>NSBluetoothPeripheralUsageDescription</key>
+    <string>$(PRODUCT_NAME) bluetooth use.</string>
+    <key>NSCalendarsUsageDescription</key>
+    <string>Application required a permission to access into calendar.</string>
+    <key>NSCameraUsageDescription</key>
+    <string>Application required a permission to use a camera for taking a photo of your documents.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Application required to shared your current location for in-out time</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Application need to access to your current location for Check In or Out</string>
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Application need a permission to access your microphone for media record.</string>
+    <key>NSMotionUsageDescription</key>
+    <string>$(PRODUCT_NAME) motion use.</string>
+    <key>NSPhotoLibraryAddUsageDescription</key>
+    <string>Application need a permission to save image to your gallery.</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>Application need a permission to access your photo library.</string>
+    <key>NSSpeechRecognitionUsageDescription</key>
+    <string>$(PRODUCT_NAME) speech recognition use.</string>
 	<key>OneSignal_app_groups_key</key>
-	<string>group.com.threepp.taemployee.onesignal</string>
+	<string>group.com.threepp.tamanager.onesignal</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Entypo.ttf</string>

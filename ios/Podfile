@@ -67,11 +67,6 @@ target 'TimeAttendManager' do
   pod 'react-native-google-maps', :path => rn_maps_path
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
-  
-  target 'TimeAttendManagerTests' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   use_native_modules!
 
@@ -85,11 +80,6 @@ target 'TimeAttendManager' do
   end
 end
 
-target 'TimeAttendManager-tvOS' do
-  # Pods for TimeAttendManager-tvOS
-
-  target 'TimeAttendManager-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 2.9.3', '< 3.0'
 end
