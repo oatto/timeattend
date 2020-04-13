@@ -55,8 +55,7 @@ target 'timemint' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'RNPermissions', :pa
-  th => "../node_modules/react-native-permissions/RNPermissions.podspec"
+  pod 'RNPermissions', :path => "../node_modules/react-native-permissions/RNPermissions.podspec"
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
   pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary.podspec"
@@ -68,11 +67,6 @@ target 'timemint' do
   pod 'react-native-google-maps', :path => rn_maps_path
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
-
-  target 'timemintTests' do
-    inherit! :complete
-    # Pods for testing
-  end
 
   use_native_modules!
 
@@ -88,13 +82,4 @@ end
 
 target 'OneSignalNotificationServiceExtension' do
   pod 'OneSignal', '>= 2.9.3', '< 3.0'
-end
-
-target 'timemint-tvOS' do
-  # Pods for timemint-tvOS
-
-  target 'timemint-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
 end
