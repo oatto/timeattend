@@ -1,4 +1,4 @@
-package com.timemint;
+package com.threepp.taemployee;
 
 import com.facebook.react.ReactActivity;
 
