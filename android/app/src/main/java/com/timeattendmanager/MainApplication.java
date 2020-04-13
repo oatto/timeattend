@@ -1,4 +1,4 @@
-package com.timeattendmanager;
+package com.threepp.tamanager;
 
 import android.app.Application;
 import android.content.Context;

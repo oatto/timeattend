@@ -1,4 +1,4 @@
-package com.timeattendmanager;
+package com.threepp.tamanager;
 
 import com.facebook.react.ReactActivity;
 
