@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.3'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 def add_flipper_pods!
@@ -68,11 +68,6 @@ target 'timemint' do
   pod 'GoogleMaps'
   pod 'Google-Maps-iOS-Utils'
 
-  target 'timemintTests' do
-    inherit! :complete
-    # Pods for testing
-  end
-
   use_native_modules!
 
   # Enables Flipper.
@@ -85,11 +80,6 @@ target 'timemint' do
   end
 end
 
-target 'timemint-tvOS' do
-  # Pods for timemint-tvOS
-
-  target 'timemint-tvOSTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 2.9.3', '< 3.0'
 end
