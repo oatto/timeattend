@@ -1,4 +1,4 @@
-platform :ios, '9.0'
+platform :ios, '10.3'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 def add_flipper_pods!
@@ -55,7 +55,8 @@ target 'timemint' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   permissions_path = '../node_modules/react-native-permissions/ios'
-  pod 'RNPermissions', :path => "../node_modules/react-native-permissions/RNPermissions.podspec"
+  pod 'RNPermissions', :pa
+  th => "../node_modules/react-native-permissions/RNPermissions.podspec"
   pod 'Permission-Camera', :path => "#{permissions_path}/Camera.podspec"
   pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse.podspec"
   pod 'Permission-MediaLibrary', :path => "#{permissions_path}/MediaLibrary.podspec"
@@ -83,6 +84,10 @@ target 'timemint' do
   post_install do |installer|
     flipper_post_install(installer)
   end
+end
+
+target 'OneSignalNotificationServiceExtension' do
+  pod 'OneSignal', '>= 2.9.3', '< 3.0'
 end
 
 target 'timemint-tvOS' do
