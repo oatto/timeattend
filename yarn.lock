@@ -1040,6 +1040,12 @@
     wcwidth "^1.0.1"
     ws "^1.1.0"
 
+"@react-native-community/datetimepicker@https://github.com/oatto/datetimepicker.git":
+  version "2.3.2"
+  resolved "https://github.com/oatto/datetimepicker.git#7b5be270958df1862a5dabe6f4444e98ef913ec8"
+  dependencies:
+    invariant "^2.2.4"
+
 "@react-native-community/eslint-config@^0.0.7":
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/@react-native-community/eslint-config/-/eslint-config-0.0.7.tgz#2a91d336b413d8c77ac5fa634b66703f481243ac"
@@ -6229,10 +6235,9 @@ react-native-camera@3.21.0:
     react-navigation ">=1.0.0"
     redux-saga ">=0.16.0"
 
-react-native-datepicker@^1.7.2:
+"react-native-datepicker@https://github.com/oatto/react-native-datepicker.git":
   version "1.7.2"
-  resolved "https://registry.yarnpkg.com/react-native-datepicker/-/react-native-datepicker-1.7.2.tgz#58d0822591a0ac9b32aba082650222a0ee29669d"
-  integrity sha1-WNCCJZGgrJsyq6CCZQIioO4pZp0=
+  resolved "https://github.com/oatto/react-native-datepicker.git#a477503f22ea445190488461facf21998af048fa"
   dependencies:
     moment "^2.22.0"
 
