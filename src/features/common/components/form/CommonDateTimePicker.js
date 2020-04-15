@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import DatePicker from 'react-native-datepicker';
 import { StyleSheet, ViewPropTypes } from 'react-native';
 import moment from '_utils/moment';
+import {DEFAULT_LOCALE} from '../../../../common/constants';
 import themeVariables from '_theme';
 
 class CommonDateTimePicker extends React.PureComponent {
@@ -17,11 +18,13 @@ class CommonDateTimePicker extends React.PureComponent {
     render () {
         const { input, ...inputProps } = this.props;
         const isDateMode = this.props.mode === 'date';
-        let displayMode = this.state.dateOrTime;
+        const s = {...this.state}
 
-        if (this.state.dateOrTime && isDateMode) {
-            displayMode = moment(this.state.dateOrTime, 'YYYY-MM-DD').format('dddd LL');
-        }
+        // let displayMode = s.dateOrTime;
+        //
+        // if (this.state.dateOrTime && isDateMode) {
+        //     displayMode = moment(this.state.dateOrTime, 'YYYY-MM-DD').format('dddd LL');
+        // }
 
         return (
             <DatePicker
@@ -34,10 +37,10 @@ class CommonDateTimePicker extends React.PureComponent {
                 onDateChange={(value) => {
                     const convertValue = isDateMode ? moment(value, 'dddd LL').format('YYYY-MM-DD') : value;
 
-                    this.setState({dateOrTime: convertValue});
+                    this.setState({dateOrTime: value});
                     input.onChange(convertValue);
                 }}
-                date={displayMode}
+                date={this.state.dateOrTime}
                 mode={this.props.mode}
                 androidMode={'spinner'}
                 showIcon={false}
