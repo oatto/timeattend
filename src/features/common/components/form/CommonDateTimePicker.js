@@ -34,9 +34,8 @@ class CommonDateTimePicker extends React.PureComponent {
                 placeholder={this.props.placeholder}
                 confirmBtnText={this.props.confirmText}
                 cancelBtnText={this.props.cancelText}
-                onDateChange={(value) => {
-                    const convertValue = isDateMode ? moment(value, 'dddd LL').format('YYYY-MM-DD') : value;
-
+                onDateChange={(value, date) => {
+                    const convertValue = isDateMode ? moment(date).format('YYYY-MM-DD') : value;
                     this.setState({dateOrTime: value});
                     input.onChange(convertValue);
                 }}
