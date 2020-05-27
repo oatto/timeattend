@@ -4,7 +4,7 @@ import { doRequest } from 'react-native-core/api/request/saga';
 import { call, fork, put, select, take, takeLatest } from 'redux-saga/effects';
 import indexReducer from 'react-native-core/api/paginate/reducer';
 import Trans from '_features/common/containers/Trans';
-import { findAndReplace } from 'timemint/src/utils/array';
+import { findAndReplace } from '_utils/array';
 import {
     FETCH_MNG_EMPLOYEE_MOBILE_DEVICES,
     FETCH_MNG_EMPLOYEE_MOBILE_DEVICES_STATE_KEY, MNG_FETCH_PUBLIC_DEVICE, MNG_FETCH_PUBLIC_DEVICE_STATE_KEY,
