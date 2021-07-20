@@ -21,7 +21,7 @@
     "numeral": "^2.0.6",
     "prop-types": "^15.6.0",
     "react": "16.11.0",
-    "react-native": "0.62.0",
+    "react-native": "0.62.3",
     "react-native-camera": "3.21.0",
     "react-native-core": "https://github.com/oatto/react-native-core.git",
     "react-native-datepicker": "https://github.com/oatto/react-native-datepicker.git",
