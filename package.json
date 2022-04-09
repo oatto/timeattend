@@ -15,7 +15,7 @@
     "axios": "^0.18.0",
     "colors": "^1.1.2",
     "lodash": "^4.17.4",
-    "moment": "2.22.2",
+    "moment": "2.29.2",
     "moment-timezone": "0.5.25",
     "native-base": "^2.6.0",
     "numeral": "^2.0.6",
